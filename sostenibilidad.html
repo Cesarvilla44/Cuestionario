@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Sostenibilidad Aplicada al Sistema Productivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-leaf"></i> Cuestionario de Sostenibilidad Aplicada al Sistema Productivo</h1>
+            <p>Evalúa tus conocimientos sobre sostenibilidad, economía circular, ODS y responsabilidad social corporativa</p>
+        </header>
+
+        <div id="quiz-container">
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+                <span id="progress-text">Pregunta 1 de 40</span>
+            </div>
+
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container"></div>
+            </div>
+
+            <div class="navigation">
+                <button id="home-btn-nav" class="btn btn-secondary">
+                    <i class="fas fa-home"></i> Inicio
+                </button>
+                <button id="prev-btn" class="btn btn-secondary" disabled>
+                    <i class="fas fa-arrow-left"></i> Anterior
+                </button>
+                <button id="next-btn" class="btn btn-primary">
+                    Siguiente <i class="fas fa-arrow-right"></i>
+                </button>
+                <button id="submit-btn" class="btn btn-success" style="display: none;">
+                    <i class="fas fa-check"></i> Finalizar Cuestionario
+                </button>
+            </div>
+        </div>
+
+        <div id="results-container" style="display: none;">
+            <div class="results-header">
+                <h2><i class="fas fa-trophy"></i> Resultados del Cuestionario</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="score-number">0</span>
+                        <span>/10</span>
+                    </div>
+                    <p id="score-message"></p>
+                </div>
+            </div>
+
+            <div class="results-stats">
+                <div class="stat-card correct">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <span id="correct-count">0</span>
+                        <p>Correctas</p>
+                    </div>
+                </div>
+                <div class="stat-card incorrect">
+                    <i class="fas fa-times-circle"></i>
+                    <div>
+                        <span id="incorrect-count">0</span>
+                        <p>Incorrectas</p>
+                    </div>
+                </div>
+                <div class="stat-card percentage">
+                    <i class="fas fa-percentage"></i>
+                    <div>
+                        <span id="percentage">0%</span>
+                        <p>Aciertos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="review-container">
+                <h3><i class="fas fa-list-check"></i> Revisión Detallada</h3>
+                <div id="review-questions"></div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="restart-btn" class="btn btn-primary">
+                    <i class="fas fa-redo"></i> Volver a Intentar
+                </button>
+                <button id="home-btn" class="btn btn-secondary">
+                    <i class="fas fa-home"></i> Inicio
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-sostenibilidad.js"></script>
+</body>
+</html>
